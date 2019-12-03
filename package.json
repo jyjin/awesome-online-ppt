@@ -1,0 +1,59 @@
+{
+  "private": true,
+  "scripts": {
+    "api": "supervisor -w ./server ./server/server.js ",
+    "start": "umi dev",
+    "build": "umi build",
+    "test": "umi test",
+    "lint": "eslint --ext .js src mock tests",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "antd": "^3.26.0",
+    "classnames": "^2.2.6",
+    "mockjs": "^1.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "async": "^2.6.1",
+    "babel-eslint": "^9.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.4.0",
+    "eslint-config-umi": "^1.4.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "express": "^4.16.3",
+    "express-react-views": "^0.10.5",
+    "handlebars": "^4.0.11",
+    "husky": "^0.14.3",
+    "jsonwebtoken": "^8.3.0",
+    "lint-staged": "^7.2.2",
+    "lodash": "^4.17.10",
+    "md5": "^2.2.1",
+    "pm2": "^3.4.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "react-tap-event-plugin": "^3.0.3",
+    "react-test-renderer": "^16.7.0",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "supervisor": "^0.12.0",
+    "umi": "^2.7.7",
+    "umi-plugin-react": "^1.8.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@assets*": [
+        "src/assets*"
+      ],
+      "@config*": [
+        "config"
+      ],
+      "@component*": [
+        "src/pages/component"
+      ],
+      "@lib*": [
+        "src/pages/lib*"
+      ],
+      "@layouts*": [
+        "src/layouts*"
+      ],
+      "@service*": [
+        "src/service"
+      ],
+      "@style*": [
+        "src/pages/style*"
+      ],
+      "@constant*": [
+        "src/pages/constant"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

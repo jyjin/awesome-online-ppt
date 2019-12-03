@@ -1,0 +1,128 @@
+// 基础样式类
+//    定义通用样式
+//    add by jyjin 
+//    20190723
+@import "./config.less";
+
+body,
+ul,
+ol,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.grow {
+  flex-grow: 1
+}
+
+.shrink0 {
+  flex-shrink: 0
+}
+
+.flex-center {
+  .flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center-top {
+  .flex;
+  justify-content: center;
+}
+
+.flex-start-center {
+  .flex;
+  align-items: center;
+}
+
+.flex-warp {
+  .flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f12 {
+  font-size: 0.12rem
+}
+
+.f14 {
+  font-size: 0.14rem
+}
+
+.f16 {
+  font-size: 0.16rem
+}
+
+.f18 {
+  font-size: 0.18rem;
+}
+
+.tl {
+  text-align: left
+}
+
+;
+
+.tr {
+  text-align: right
+}
+
+.tc {
+  text-align: center
+}
+
+.cube(@value) {
+  width: e("@{value}rem");
+  height: e("@{value}rem");
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.iblock {
+  display: inline-block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.row {
+  .flex-start-center;
+  min-height: 0.4rem;
+  padding: 0 0.1rem;
+  border-bottom: 0.01rem solid var(--border-primary);
+}
+
+.radius {
+  border-radius: 100%;
+}
+
+.ell{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

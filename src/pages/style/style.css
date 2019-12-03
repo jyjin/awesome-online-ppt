@@ -1,0 +1,80 @@
+/*
+  重写全局样式文件
+  1. 给页面加模块class
+  2. 书写子选择器样式覆盖
+    add by jyjin 2019.07.31
+*/
+
+/* antd样式重写 */
+.ant-layout {
+  background: var(--white);
+}
+
+div.ant-select-open .ant-select-selection,
+div.ant-select-selection {
+  border: none;
+  outline: none;
+    background: none;
+}
+div.ant-select-selection--single{
+    width: 38px;
+}
+
+div.ant-select-selection:focus {
+  border: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active{
+    color: #2196F3;
+    font-family: PingFangSC-Medium;
+}
+.ant-tabs-nav .ant-tabs-tab:hover{
+    color: #2196F3;
+    font-family: PingFangSC-Medium;
+}
+
+.chat-left .ant-tabs-nav-scroll,
+.record-left .ant-tabs-nav-scroll {
+  text-align: center;
+}
+
+textarea.ant-input {
+  height: calc(100% - 0.2rem);
+}
+
+.page-chat .ql-image {
+  max-width: 100%;
+}
+
+/* 知识内容宽度限制 */
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width: 960px) and (max-width: 1199px) {}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .ant-layout-header {
+    padding: 0 0.1rem;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .ant-layout-header {
+    padding: 0 0.1rem;
+  }
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.icctel-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* display: none; */
+}
